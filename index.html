@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  	<title>ClockPad</title>
+  	<link rel='stylesheet prefetch' href='bootstrap/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="text-center">
+				<h1 class="title">
+					World Clock
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row border">
+		<div class="col-md-12 col-sm-12">
+
+			<div class="col-md-4 col-sm-4 block text-center hm-zoom">
+				<h4 id="title1" class="hide"><span></span>
+					<div class="pull-right cls" data-id="1">
+	  					<i class="fa fa-times" aria-hidden="true"></i>
+	  				</div>
+				</h4>
+				<a id="btn_add_1" class="btn_add" data-id="1" data-toggle="modal" data-target="#myModal">
+					<img src="img/add-icon.png" alt="" />
+					<h2>Add</h2>
+				</a>
+				<div class="clock" id="clock1"></div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 block text-center">
+				<h4 id="title2" class="hide"><span></span>
+					<div class="pull-right cls" data-id="2">
+	  					<i class="fa fa-times" aria-hidden="true"></i>
+	  				</div>
+				</h4>
+				<a id="btn_add_2" class="btn_add" data-id="2" data-toggle="modal" data-target="#myModal">
+					<img src="img/add-icon.png" alt="" />
+					<h2>Add</h2>
+				</a>
+				<div class="clock" id="clock2"></div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 block text-center">
+				<h4 id="title3" class="hide"><span></span>
+					<div class="pull-right cls" data-id="3">
+	  					<i class="fa fa-times" aria-hidden="true"></i>
+	  				</div>
+				</h4>
+				<a id="btn_add_3" class="btn_add" data-id="3" data-toggle="modal" data-target="#myModal">
+					<img src="img/add-icon.png" alt="" />
+					<h2>Add</h2>
+				</a>
+				<div class="clock" id="clock3"></div>
+			</div>
+
+		</div>
+	</div>
+	<div class="row border">
+		<div class="col-md-12 col-sm-12">
+
+			<div class="col-md-4 col-sm-4 block text-center">
+				<h4 id="title4" class="hide"><span></span>
+					<div class="pull-right cls" data-id="4">
+	  					<i class="fa fa-times" aria-hidden="true"></i>
+	  				</div>
+				</h4>
+				<a id="btn_add_4" class="btn_add" data-id="4" data-toggle="modal" data-target="#myModal">
+					<img src="img/add-icon.png" alt="" />
+					<h2>Add</h2>
+				</a>
+				<div class="clock" id="clock4"></div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 block text-center">
+				<h4 id="title5" class="hide"><span></span>
+					<div class="pull-right cls" data-id="5">
+	  					<i class="fa fa-times" aria-hidden="true"></i>
+	  				</div>
+				</h4>
+				<a id="btn_add_5" class="btn_add" data-id="5" data-toggle="modal" data-target="#myModal">
+					<img src="img/add-icon.png" alt="" />
+					<h2>Add</h2>
+				</a>
+				<div class="clock" id="clock5"></div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 block text-center">
+				<h4 id="title6" class="hide"><span></span>
+					<div class="pull-right cls" data-id="6">
+	  					<i class="fa fa-times" aria-hidden="true"></i>
+	  				</div>
+				</h4>
+				<a id="btn_add_6" class="btn_add" data-id="6" data-toggle="modal" data-target="#myModal">
+					<img src="img/add-icon.png" alt="" />
+					<h2>Add</h2>
+				</a>
+				<div class="clock" id="clock6"></div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+ <!-- Modal  Start -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Cities List</h4>
+        </div>
+        <div class="modal-body">
+
+          	<div class="form-group">
+			  	<label for="sel8">Select City To Add in Watch:</label>
+			  	<select class="form-control sel" id="sel">
+			  	</select>
+			</div>
+
+        </div>
+        <div class="modal-footer">
+			<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-success">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal  End -->
+
+</body>
+	<!-- 					Js Section Start 					-->
+  	<script type="text/javascript" src='js/jquery.min.js'></script>
+	<script type="text/javascript" src='bootstrap/js/bootstrap.min.js'></script>
+	<script type="text/javascript" src="js/jquery.Clock.js"></script>
+	<script type="text/javascript" src="js/time_zones.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- 					Js Section End	 					-->
+</html>
